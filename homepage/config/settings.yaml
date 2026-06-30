@@ -1,0 +1,34 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings/
+
+title: Simon's Homelab
+theme: dark
+color: slate
+
+headerStyle: boxed
+
+layout:
+
+  Media:
+    style: row
+    columns: 3
+
+  Utilities:
+    style: row
+    columns: 3
+
+  Infrastructure:
+    style: row
+    columns: 3
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+allowedHosts:
+  - localhost:3001
+  - 127.0.0.1:3001
+  - localhost
+  - 127.0.0.1
+  - 0.0.0.0:3001

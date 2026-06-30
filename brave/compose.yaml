@@ -1,0 +1,24 @@
+services:
+  brave:
+    image: lscr.io/linuxserver/brave:latest
+    container_name: brave
+
+    security_opt:
+      - seccomp:unconfined
+
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - TITLE=Brave Browser
+
+    volumes:
+      - ./config:/config
+
+    ports:
+      - "3002:3000"
+      - "3003:3001"
+
+    shm_size: "1gb"
+
+    restart: unless-stopped

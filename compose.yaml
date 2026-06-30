@@ -1,0 +1,6 @@
+include:
+  - ./jellyfin/compose.yaml
+  - ./homepage/compose.yaml
+  - ./webtop/compose.yaml
+  - ./portainer/compose.yaml
+  - ./brave/compose.yaml

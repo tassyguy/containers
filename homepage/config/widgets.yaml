@@ -1,0 +1,12 @@
+- greeting:
+    text_size: xl
+    text: Hi Simon!
+
+- resources:
+    cpu: true
+    memory: true
+    disk: /
+
+- search:
+    provider: google
+    target: _blank

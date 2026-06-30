@@ -1,0 +1,20 @@
+# Ignore runtime application state
+jellyfin/config/
+jellyfin/cache/
+
+webtop/config/
+webtop/cache/
+webtop/Documents/
+
+brave/config/
+brave/cache/
+
+portainer/data/
+
+# Homepage configuration is source code
+!homepage/config/
+
+# Ignore Homepage logs only
+homepage/config/logs/
+
+.env

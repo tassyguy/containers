@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Homepage - Dark Glass Theme
+   ========================================================================== */
+
+/* ---------- Background ---------- */
+
+body {
+    background:
+        radial-gradient(circle at top left, rgba(88,101,242,.18), transparent 40%),
+        radial-gradient(circle at bottom right, rgba(0,212,255,.10), transparent 45%),
+        #0b0d12;
+}
+
+/* ---------- Main Content ---------- */
+
+#page_container {
+    max-width: 1800px;
+}
+
+/* ---------- Cards ---------- */
+
+.service,
+.bookmark,
+.widget,
+.info-widget,
+.status-widget {
+    background: rgba(28, 32, 40, 0.55) !important;
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 18px;
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        border-color .18s ease;
+}
+
+/* ---------- Hover ---------- */
+
+.service:hover,
+.bookmark:hover,
+.widget:hover {
+
+    transform: translateY(-3px);
+
+    border-color: rgba(255,255,255,.18);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35);
+}
+
+/* ---------- Search ---------- */
+
+.search-container input {
+
+    background: rgba(255,255,255,.06);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 16px;
+
+    backdrop-filter: blur(18px);
+
+    color: white;
+
+    font-size: 1rem;
+}
+
+.search-container input:focus {
+
+    border-color: #5E81F4;
+
+    box-shadow:
+        0 0 0 3px rgba(94,129,244,.25);
+
+    outline: none;
+}
+
+/* ---------- Section Headers ---------- */
+
+h2 {
+
+    font-weight: 700;
+
+    letter-spacing: .03em;
+
+    color: #F5F5F7;
+}
+
+/* ---------- Service Names ---------- */
+
+.service-title {
+
+    font-weight: 600;
+
+    color: white;
+}
+
+/* ---------- Descriptions ---------- */
+
+.service-description {
+
+    color: rgba(255,255,255,.72);
+}
+
+/* ---------- Widgets ---------- */
+
+.widget-title {
+
+    color: rgba(255,255,255,.82);
+}
+
+/* ---------- Sidebar ---------- */
+
+.sidebar {
+
+    background: rgba(15,18,24,.65);
+
+    backdrop-filter: blur(30px);
+
+    border-right: 1px solid rgba(255,255,255,.08);
+}
+
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: rgba(255,255,255,.15);
+
+    border-radius: 999px;
+}
+
+/* ---------- Selection ---------- */
+
+::selection {
+
+    background: rgba(94,129,244,.35);
+}
+
+/* ---------- Animations ---------- */
+
+* {
+
+    transition:
+        background-color .2s ease,
+        color .2s ease;
+}

@@ -1,0 +1,29 @@
+- Media:
+    - Jellyfin:
+        href: http://localhost:8096
+        icon: jellyfin
+        description: Private Media Server
+        server: my-docker
+        container: jellyfin
+
+- Utilities:
+    - Webtop:
+        href: http://localhost:3000
+        icon: desktop
+        description: Web Desktop
+        server: my-docker
+        container: webtop
+    - Brave:
+        href: https://localhost:3003
+        icon: brave
+        description: Secure Browser
+        server: my-docker
+        container: brave
+
+- Infrastructure:
+    - Portainer:
+        href: https://localhost:9443
+        icon: portainer
+        description: Docker Management
+        server: my-docker
+        container: portainer
