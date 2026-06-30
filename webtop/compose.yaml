@@ -8,6 +8,8 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
       - TITLE=Webtop
+      - DOCKER_MODS=linuxserver/mods:universal-package-install
+      - INSTALL_PACKAGES=${INSTALL_PACKAGES}
 
     volumes:
       - ./config:/config
